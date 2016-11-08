@@ -56,13 +56,13 @@ public class MiFirebaseMessagingService extends FirebaseMessagingService {
      * @param cuerpoMensaje  Cuerpo del mensaje recibido
      */
 
-    private  void mandarNotoificacion(String cuerpoMensaje){
+    private  void sendNotification(String cuerpoMensaje){
 
         Intent intent=new Intent(this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         PendingIntent pendingIntent=PendingIntent.getActivity(this,0,intent,PendingIntent.FLAG_ONE_SHOT);
 
-        Uri uriConSonido= RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+        Uri uriConSonido= RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE);
         NotificationCompat.Builder noBuilder=new NotificationCompat.Builder(this)
                 .setSmallIcon(R.drawable.ic_stat_ic_notification)
                 .setContentTitle("Mensajito FCM")

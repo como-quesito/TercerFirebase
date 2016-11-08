@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "228243155752",
+    "firebase_url": "https://tercer-proyectito-fireabse.firebaseio.com",
+    "project_id": "tercer-proyectito-fireabse",
+    "storage_bucket": "tercer-proyectito-fireabse.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228243155752:android:27b0ca5f15b93bc7",
+        "android_client_info": {
+          "package_name": "birebase3.campitos.org.tercerfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "228243155752-qup296f7896od3jla81mpjbroida1tkl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXsLLdO5qi7vYbWpXeXwju2BTWSQ8Lw4E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
