@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TercerFirebase</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+    <string name="msg_subscribed">Subscribed to news topic</string>
 </resources>
