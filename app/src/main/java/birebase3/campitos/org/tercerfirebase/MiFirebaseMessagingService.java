@@ -46,7 +46,7 @@ public class MiFirebaseMessagingService extends FirebaseMessagingService {
             Log.d(TAG,"Cuerpo dem mensaje de notificación: "+remoteMessage.getNotification().getBody());
         }
         //Aqui tambien iria código para generar nuestras propias notificaciones
-        //Como resulatdo de recibir un mensaje de FCM
+        //Como resulatdo de recibir un mensaje de FCM firebasesito
         sendNotification(":)"+remoteMessage.getData().get("body"));
 
     }
