@@ -1,5 +1,6 @@
 package birebase3.campitos.org.tercerfirebase;
 
+import android.os.AsyncTask;
 import android.util.Log;
 
 import com.google.firebase.iid.FirebaseInstanceId;
@@ -33,5 +34,13 @@ public class MiFirebaseInstanceIDService extends FirebaseInstanceIdService{
     private  void mandarRegistroAlServidor(String token){
         //Aqui se implementa el codiguito para mandar el token al servidor
         //por ejemplo al mongoDB etc.
+    }
+
+    class TareaMensajeria extends AsyncTask<String, Integer, Integer>{
+
+        @Override
+        protected Integer doInBackground(String... strings) {
+            return null;
+        }
     }
 }

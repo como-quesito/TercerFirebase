@@ -18,9 +18,17 @@ android {
         }
     }
 
-   packagingOptions{
-       exclude 'LICENSE.txt'
-   }
+    packagingOptions {
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/notice.txt'
+    }
+    lintOptions {
+        //
+        abortOnError false
+    }
 }
 
 
@@ -35,6 +43,8 @@ dependencies {
 
     compile 'com.android.support:appcompat-v7:24.2.0'
     compile 'com.google.firebase:firebase-messaging:9.6.1'
+    compile 'org.springframework.android:spring-android-rest-template:2.0.0.M3'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.5.2'
 
     testCompile 'junit:junit:4.12'
 }
